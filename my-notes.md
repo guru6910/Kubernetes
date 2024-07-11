@@ -5,6 +5,9 @@
 - it manages multy containers.
 - it is an open source orchastration engine for automating , deployment, scaling and management of containerized application.
 
+
+${\color{red} \textbf{Kubectl : }}$
+
 ## ${\color{green} \textbf{Architecture of k8s}}$
 
 
