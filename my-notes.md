@@ -19,3 +19,30 @@ ${\color{red} \textbf{Controller Manager :}}$ The Kubernetes Controller Manager 
 
 ${\color{red} \textbf{API server :}}$ the API server is the primary gateway through which users, applications, and Kubernetes components interact with the cluster, making it a fundamental component for managing and orchestrating containerized workloads in Kubernetes.
 
+${\color{purple} \textbf{Workers}}$
+
+${\color{red} \textbf{kublet :}}$ The Kubelet is an agent that runs on each node in the Kubernetes cluster.
+
+${\color{red} \textbf{Kube proxy : }}$ Kube Proxy (kube-proxy) is a network proxy that runs on each node in the cluster.
+
+${\color{red} \textbf{Container engine :}}$ The Container Engine (e.g., Docker, containerd, cri-o) is responsible for managing the container lifecycle on each node.
+
+${\color{red} \textbf{POD :}}$ A Pod is the smallest deployable unit in Kubernetes and represents one or more containers that share the same network and storage context.
+
+
+${\color{purple} \textbf{Advantages of k8s}}$
+- Orchastration
+- Scalability
+- Availability
+- Load balancing
+- Rolling Updates
+- Strong community support
+- Self healing
+
+${\color{purple} \textbf{k8s services of providers}}$
+
+${\color{red} \textbf{Elastic k8s service :}}$ EKS is a managed Kubernetes service provided by Amazon Web Services (AWS).
+
+${\color{red} \textbf{Azure K8s service :}}$ AKS is a managed Kubernetes service provided by Microsoft Azure
+
+${\color{red} \textbf{Google kubernetes engine :}}$ GKE is a managed Kubernetes service provided by Google Cloud Platform (GCP).
