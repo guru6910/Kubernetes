@@ -46,3 +46,35 @@ minikube start
 ````
 minikube stop
 ````
+
+
+${\color{purple} \textbf{create pod nginx}}$
+
+${\color{pink} \textbf{pod.html}}$
+````
+apiVersion: v1
+kind: Pod
+metadata:
+   name: pod2
+spec:
+ containers:
+ - name: pod1
+   image: httpd:latest
+   ports:
+   - containerPort: 80
+````
+${\color{purple} \textbf{create pod httpd}}$
+
+${\color{pink} \textbf{pod.html}}$
+````
+apiVersion: v1
+kind: Pod
+metadata:
+   name: pod2
+spec:
+ containers:
+ - name: pod1
+   image: nginx:latest
+   ports:
+   - containerPort: 80
+````
