@@ -48,9 +48,9 @@ minikube stop
 ````
 
 
-${\color{purple} \textbf{create pod nginx}}$
+${\color{green} \textbf{create pod nginx}}$
 
-${\color{pink} \textbf{pod.html}}$
+${\color{purple} \textbf{pod.html}}$
 ````
 apiVersion: v1
 kind: Pod
@@ -63,9 +63,9 @@ spec:
    ports:
    - containerPort: 80
 ````
-${\color{purple} \textbf{create pod httpd}}$
+${\color{green} \textbf{create pod httpd}}$
 
-${\color{pink} \textbf{pod.html}}$
+${\color{purple} \textbf{pod.html}}$
 ````
 apiVersion: v1
 kind: Pod
