@@ -1,4 +1,4 @@
-${\color{green} \textbf{pod.yaml}}$
+${\color{purple} \textbf{pod.yaml}}$
 ````
 apiVersion: v1
 kind: Pod
@@ -12,7 +12,7 @@ spec:
    - containerPort: 80
 ````
 
-${\color{green} \textbf{replication-controller.yaml}}$
+${\color{purple} \textbf{replication-controller.yaml}}$
 ````
 apiVersion: v1
 kind: ReplicationController
