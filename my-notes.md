@@ -10,6 +10,8 @@ ${\color{red} \textbf{Kubectl : }}$
 
 ## ${\color{green} \textbf{Architecture of k8s}}$
 
+![image](https://github.com/user-attachments/assets/d0db8be9-56a4-4089-a881-0bb53458e07b)
+
 
 ${\color{purple} \textbf{Master plan}}$
 
