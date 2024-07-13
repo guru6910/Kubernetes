@@ -16,27 +16,3 @@ spec:
    - containerPort: 8080
 ````
 
-${\color{purple} \textbf{replication-controller.yaml}}$
-````
-apiVersion: v1
-kind: ReplicationController
-metadata:
- name: rc-demo
- labels:
-  env: dev
-
-spec:
- replicas: 3
- selector:
-    env: dev
- template:
-   metadata:
-    labels:
-      env: dev
-   spec:
-    containers:
-    - name: demo
-      image: nginx
-      ports:
-      - containerPort: 80
-````
