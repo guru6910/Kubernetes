@@ -22,3 +22,8 @@ spec:
       ports:
       - containerPort: 80
 ````
+
+
+${\color{purple} \textbf{Labels :}}$
+${\color{purple} \textbf{Replicas :}}$
+${\color{purple} \textbf{Selectors :}}$
