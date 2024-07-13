@@ -24,6 +24,8 @@ spec:
 ````
 
 
-${\color{purple} \textbf{Labels :}}$
-${\color{purple} \textbf{Replicas :}}$
-${\color{purple} \textbf{Selectors :}}$
+${\color{red} \textbf{Labels :}}$
+
+${\color{red} \textbf{Replicas :}}$
+
+${\color{red} \textbf{Selectors :}}$
