@@ -105,3 +105,15 @@ kubrctl get pods -o wide
 ````
 kubectl delete pod <pod_name>
 ````
+7. Create Replication controller
+````
+kubectl apply -f rc.yaml
+````
+8. List of Replication controller
+````
+kubectl get rc
+````
+9. Delete Replication Controller
+````
+kubectl delete rc <rc-name>
+````
