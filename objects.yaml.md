@@ -10,6 +10,10 @@ spec:
    image: nginx:latest
    ports:
    - containerPort: 80
+  - name: pod2
+   image: tomcat
+   ports:
+   - containerPort: 8080
 ````
 
 ${\color{purple} \textbf{replication-controller.yaml}}$
