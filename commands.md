@@ -28,6 +28,8 @@ kubectl delete pod <pod_name>
 ````
 
 ${\color{purple} \textbf{Replication Controller}}$
+
+
 7. Create Replication controller
 ````
 kubectl apply -f rc.yaml
