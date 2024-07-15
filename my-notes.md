@@ -4,7 +4,7 @@
 - k8s is orchastration tool.
 - it manages multy containers.
 - it is an open source orchastration engine for automating , deployment, scaling and management of containerized application.
-
+- K8s has two versions, the original Kubernetes and a mini version which is known as minikube.
 
 ${\color{red} \textbf{Kubectl : }}$ give access for kubernetes commands.
 
