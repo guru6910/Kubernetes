@@ -81,5 +81,4 @@ A ReplicaSet in Kubernetes ensures that a specified number of pod replicas are r
 
 ![image](https://github.com/user-attachments/assets/656a1be5-d1b2-4674-9b64-d6577cbaf64d)
 
-![Screenshot 2024-07-15 213622](https://github.com/user-attachments/assets/f05f2dd4-a03d-4494-9046-5f43c6726c49)
 
