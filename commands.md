@@ -1,6 +1,6 @@
 ## $${\color{green} \textbf{Basic Commands of k8s}}$$
 
-${\color{purple} \textbf{pod}}$
+${\color{cyan} \textbf{pod}}$
 
 1. Check the minikube install or not.
 ````
@@ -27,7 +27,7 @@ kubrctl get pods -o wide
 kubectl delete pod <pod_name>
 ````
 
-${\color{purple} \textbf{Replication Controller}}$
+${\color{brown} \textbf{Replication Controller}}$
 
 
 7. Create Replication controller
