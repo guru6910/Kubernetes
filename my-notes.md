@@ -53,4 +53,8 @@ ${\color{red} \textbf{Azure K8s service :}}$ AKS is a managed Kubernetes service
 ${\color{red} \textbf{Google kubernetes engine :}}$ GKE is a managed Kubernetes service provided by Google Cloud Platform (GCP).
 
 
-${\color{red} \textbf{k8s service}}$
+## Selectors
+
+${\color{red} \textbf{Equality Based}}$
+
+${\color{red} \textbf{Set Based}}$
