@@ -53,9 +53,9 @@ ${\color{red} \textbf{Azure K8s service :}}$ AKS is a managed Kubernetes service
 ${\color{red} \textbf{Google kubernetes engine :}}$ GKE is a managed Kubernetes service provided by Google Cloud Platform (GCP).
 
 
-${\color{red} \textbf{Labels :}}$  Key-value pairs assigned to Kubernetes objects for organization and selection.
+${\color{green} \textbf{Labels :}}$  Key-value pairs assigned to Kubernetes objects for organization and selection.
 
-${\color{red} \textbf{Replicas :}}$  The desired number of identical pod instances to run.
+${\color{green} \textbf{Replicas :}}$  The desired number of identical pod instances to run.
 
 
 ## Selectors
