@@ -69,3 +69,12 @@ ${\color{red} \textbf{Set Based}}$
 - In = key: value
 - NotIN = key: value : avoid it and run
 - Exists = env{ } : run all which hav in that env 
+
+
+###  ${\color{red} \textbf{Replication Controller : }}$  Replication control in Kubernetes (K8s) ensures that a specified number of pod replicas are running at any given time. It automatically replaces any pods that fail, maintaining the desired state specified by the user.
+
+###  ${\color{red} \textbf{Replica Set : }}$  A ReplicaSet in Kubernetes ensures that a specified number of pod replicas are running at any given time. If a pod fails or is deleted, the ReplicaSet automatically creates a new one to maintain the desired number of replicas.
+
+![image](https://github.com/user-attachments/assets/656a1be5-d1b2-4674-9b64-d6577cbaf64d)
+
+
