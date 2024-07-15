@@ -140,15 +140,15 @@ spec:
           - containerPort: 81
 ````
 
-## ${\color{red} \textbf{Selectors}}$
+## Selectors
 
-## ${\color{green} \textbf{Equality Based Selector}}$
+Equality Based Selector
 
 - it is old version of selectors
 - we use Equality based in Replication controoler for manage with pod
 - it define with key:value
  
-## ${\color{green} \textbf{Set Based Selector}}$
+Set Based Selector
 
 - it is updated version of selector
 - we use Set based in Replica set and Replication controller also.
