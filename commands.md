@@ -1,4 +1,4 @@
-## $${\color{green} \textbf{Basic Commands of k8s}}$$
+## $${\color{violet} \textbf{Basic Commands of k8s}}$$
 
 ${\color{cyan} \textbf{pod}}$
 
@@ -27,7 +27,7 @@ kubrctl get pods -o wide
 kubectl delete pod <pod_name>
 ````
 
-${\color{brown} \textbf{Replication Controller}}$
+${\color{cyan} \textbf{Replication Controller}}$
 
 
 7. Create Replication controller
@@ -43,7 +43,7 @@ kubectl get rc
 kubectl delete rc <rc-name>
 ````
 
-${\color{violet} \textbf{Replica Set}}$
+${\color{cyan} \textbf{Replica Set}}$
 
 10. Create Replica set
 ````
