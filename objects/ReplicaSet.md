@@ -1,5 +1,7 @@
 ${\color{purple} \textbf{pod.yaml}}$
 
+
+${\color{pink} \textbf{Equality based Selector}}$
 ````
 apiVersion: apps/v1
 kind: ReplicaSet
@@ -25,7 +27,7 @@ spec:
 ````
 
 
-
+${\color{pink} \textbf{Set based Selector}}$
 
 ````
 apiVersion: apps/v1
