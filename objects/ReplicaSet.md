@@ -29,6 +29,7 @@ spec:
 
 ${\color{purple} \textbf{Set :}}$
 
+## ${\color{purple} \textbf{In}}$
 ````
 apiVersion: apps/v1
 kind: ReplicaSet
