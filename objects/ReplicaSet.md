@@ -57,21 +57,20 @@ spec:
 ````
 
 
+## Selectors
 
-${\color{purple} \textbf{Selectors}}$
 
+### Equality Based Selector
 
-${\color{black} \textbf{Equality Based Selector}}$
-
-it is old version of selectors
-  we use Equality based in Replication controoler for manage with pod
-  it define with key:value
+- it is old version of selectors
+- we use Equality based in Replication controoler for manage with pod
+- it define with key:value
  
-${\color{black} \textbf{Set Based Selector}}$
+### Set Based Selector
 
-it is updated version of selector
-we use Set based in Replica set and Replication controller also.
-it define with
-In = key: value
-NotIN = key: value : avoid it and run
-Exists = env{ } : run all which hav in that env 
+- it is updated version of selector
+- we use Set based in Replica set and Replication controller also.
+- it define with
+- In = key: value
+- NotIN = key: value : avoid it and run
+- Exists = env{ } : run all which hav in that env 
