@@ -42,3 +42,18 @@ kubectl get rc
 ````
 kubectl delete rc <rc-name>
 ````
+
+${\color{purple} \textbf{Replica Set}}$
+
+10. Create Replica set
+````
+kubectl appply -f rs.yaml
+````
+11. List of Replica Set.
+````
+kubectl get rs
+````
+12. Delete Replica set.
+````
+kubectl delete rs <rs-name>
+````
