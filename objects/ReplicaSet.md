@@ -1,6 +1,4 @@
-${\color{purple} \textbf{pod.yaml}}$
-
-
+${\color{purple} \textbf{Replica Set}}$
 ${\color{pink} \textbf{Equality based Selector}}$
 ````
 apiVersion: apps/v1
