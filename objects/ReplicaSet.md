@@ -1,5 +1,7 @@
 ${\color{purple} \textbf{Replica Set}}$
-${\color{pink} \textbf{Equality based Selector}}$
+
+
+${\color{red} \textbf{Equality based selector}}$
 ````
 apiVersion: apps/v1
 kind: ReplicaSet
@@ -25,7 +27,7 @@ spec:
 ````
 
 
-${\color{pink} \textbf{Set based Selector}}$
+${\color{red} \textbf{Set based selector}}$
 
 ````
 apiVersion: apps/v1
@@ -56,15 +58,15 @@ spec:
 
 
 
-## ${\color{red} \textbf{Selectrs}}$
+## ${\color{green} \textbf{Selectors}}$
 
 
-${\color{green} \textbf{Equality Based Selector :}}$
+${\color{purple} \textbf{Equality Based Selector}}$
 - it is old version of selectors
 - we use Equality based in Replication controoler for manage with pod
 - it define with key:value
 
-${\color{green} \textbf{Set Based Selector :}}$
+${\color{purple} \textbf{Set Based Selector}}$
 - it is updated version of selector
 - we use Set based in Replica set and Replication controller also.
 - it define with
