@@ -24,8 +24,8 @@ spec:
 ````
 
 
-${\color{red} \textbf{Labels :}}$
+${\color{red} \textbf{Labels :}}$  Key-value pairs assigned to Kubernetes objects for organization and selection.
 
-${\color{red} \textbf{Replicas :}}$
+${\color{red} \textbf{Replicas :}}$  The desired number of identical pod instances to run.
 
-${\color{red} \textbf{Labels :}}$
+${\color{red} \textbf{Selectors :}}$  Criteria used to identify and manage groups of labeled objects.
