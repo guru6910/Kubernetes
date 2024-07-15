@@ -57,4 +57,15 @@ ${\color{red} \textbf{Google kubernetes engine :}}$ GKE is a managed Kubernetes 
 
 ${\color{red} \textbf{Equality Based}}$
 
+- it is old version of selectors
+- we use Equality based in Replication controoler for manage with pod
+- it define with key:value
+  
 ${\color{red} \textbf{Set Based}}$
+ 
+- it is updated version of selector
+- we use Set based in Replica set and Replication controller also.
+- it define with
+- In = key: value
+- NotIN = key: value : avoid it and run
+- Exists = env{ } : run all which hav in that env 
