@@ -51,3 +51,22 @@ ${\color{red} \textbf{Elastic k8s service :}}$ EKS is a managed Kubernetes servi
 ${\color{red} \textbf{Azure K8s service :}}$ AKS is a managed Kubernetes service provided by Microsoft Azure
 
 ${\color{red} \textbf{Google kubernetes engine :}}$ GKE is a managed Kubernetes service provided by Google Cloud Platform (GCP).
+
+
+${\color{red} \textbf{Selectors}}$
+
+${\color{green} \textbf{Equality Based Selector}}$
+
+- it is old version of selectors
+- we use Equality based in Replication controoler for manage with pod
+- it define with key:value
+- Set Based Selector
+
+${\color{green} \textbf{Set Based Selector}}$
+
+- it is updated version of selector
+- we use Set based in Replica set and Replication controller also.
+- it define with
+- In = key: value
+- NotIN = key: value : avoid it and run
+- Exists = env{ } : run all which hav in that env
