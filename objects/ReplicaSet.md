@@ -1,7 +1,7 @@
 ${\color{purple} \textbf{Replica Set}}$
 
 
-${\color{red} \textbf{Equality based selector}}$
+${\color{red} \textbf{Equality :}}$
 ````
 apiVersion: apps/v1
 kind: ReplicaSet
