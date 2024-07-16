@@ -88,3 +88,7 @@ kubectl delete deployment <deployment_name>
 ````
 kubectl rollout history deployment <deployment_name>
 ````
+6. Update the image Version.
+````
+kubectl set image deployment/<deployment_name> nginx=<new_version>
+````
