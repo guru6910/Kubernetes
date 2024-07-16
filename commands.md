@@ -26,38 +26,46 @@ kubrctl get pods -o wide
 ````
 kubectl delete pod <pod_name>
 ````
+7. Enter the pod
+````
+kubectl exec <pod_name>  -it -c <container_name> -- /bin/bash
+````
+8. create a pod with command.
+````
+kubectl run nginx --image=nginx --restart=Never
+````
 
 ${\color{cyan} \textbf{Replication Controller}}$
 
 
-7. Create Replication controller
+1. Create Replication controller
 ````
 kubectl apply -f rc.yaml
 ````
-8. List of Replication controller
+2. List of Replication controller
 ````
 kubectl get rc
 ````
-9. Delete Replication Controller
+3. Delete Replication Controller
 ````
 kubectl delete rc <rc-name>
 ````
 
 ${\color{cyan} \textbf{Replica Set}}$
 
-10. Create Replica set
+1. Create Replica set
 ````
 kubectl appply -f rs.yaml
 ````
-11. List of Replica Set.
+2. List of Replica Set.
 ````
 kubectl get rs
 ````
-12. Delete Replica set.
+3. Delete Replica set.
 ````
 kubectl delete rs <rs-name>
 ````
-13. Enter in the pod.
+4. Enter in the pod.
 ````
 kubectl exec <pod_name>  -it -c <container_name> -- /bin/bash
 ````
