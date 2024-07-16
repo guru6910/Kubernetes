@@ -65,7 +65,26 @@ kubectl get rs
 ````
 kubectl delete rs <rs-name>
 ````
-4. Enter in the pod.
+
+${\color{cyan} \textbf{Deployment}}$
+
+1. Create Deployment wit command
 ````
-kubectl exec <pod_name>  -it -c <container_name> -- /bin/bash
+kubectl create deployment <deploy_name> --image=nginx --replicas=2
+````
+2. Convert yaml language which deployment created with command in particular file
+````
+kubectl get deployment -o yaml > <file.yaml>
+````
+3. list of deployment
+````
+kubectl get deployment
+````
+4. Delete the Deployment
+````
+kubectl delete deployment <deployment_name>
+````
+5. view the history of deployments, including revisions and changes
+````
+kubectl rollout history deployment <deployment_name>
 ````
