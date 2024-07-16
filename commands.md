@@ -57,3 +57,7 @@ kubectl get rs
 ````
 kubectl delete rs <rs-name>
 ````
+13. Enter in the pod.
+````
+kubectl exec <pod_name>  -it -c <container_name> -- /bin/bash
+````
