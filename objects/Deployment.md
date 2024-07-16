@@ -1,4 +1,4 @@
-${\color{voilet} \textbf{Deployment}}$
+${\color{red} \textbf{Deployment}}$
 
 ````
 apiVersion: apps/v1
