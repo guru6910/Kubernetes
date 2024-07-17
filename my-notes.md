@@ -105,6 +105,7 @@ Once the old pods are terminated, it starts creating new pods with the updated v
 **When to use:** When downtime is acceptable, and you need to ensure that no old version of the application is running during the update.
 
 **Example:** Used for non-critical applications or during maintenance windows.
+
 ${\color{purple} \textbf{2. Rolling Update Strategy}}$
 
 **What it does:** Gradually replaces old pods with new ones without downtime.
