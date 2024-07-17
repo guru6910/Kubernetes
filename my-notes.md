@@ -92,4 +92,62 @@ A ReplicaSet in Kubernetes ensures that a specified number of pod replicas are r
 
 In Kubernetes (k8s), a deployment is a way to manage and update applications running in your cluster. It defines the desired state for your app, such as how many copies of the app should be running, and Kubernetes ensures that the current state matches the desired state. If something goes wrong, Kubernetes can automatically restart or replace instances to keep your app running smoothly.
 
-Think of a deployment as a recipe that tells Kubernetes how to create and maintain your app.
+
+####  ${\color{green} \textbf{Strategy}}$
+
+${\color{purple} \textbf{1. Recreate Strategy}}$
+
+**What it does:**Stops all existing pods before starting new ones.
+
+**How it works:**Kubernetes first shuts down all the existing pods running the old version of the application.
+Once the old pods are terminated, it starts creating new pods with the updated version.
+When to use: When downtime is acceptable, and you need to ensure that no old version of the application is running during the update.
+
+**Example:** Used for non-critical applications or during maintenance windows.
+${\color{purple} \textbf{2. Rolling Update Strategy}}$
+
+**What it does:** Gradually replaces old pods with new ones without downtime.
+
+**How it works:**
+Kubernetes updates a few pods at a time (based on the update settings) with the new version.
+Ensures that there are always some pods available to serve requests during the update process.
+When to use: When you need to update the application without any downtime and ensure continuous availability.
+
+**Example:** Suitable for web services or user-facing applications where availability is critical.
+
+
+${\color{purple} \textbf{3. Blue-Green Deployment}}$
+
+**What it does:** Maintains two environments (blue and green) and switches traffic between them.
+
+**How it works:** The new version of the application is deployed to the green environment while the blue environment runs the old version.
+Once the green environment is ready and tested, traffic is switched from blue to green.
+The blue environment can be kept as a fallback in case of issues with the green environment.
+
+**When to use:** When you need a safe and easy way to switch back to the old version in case of problems.
+
+**Example:** Useful in environments where high availability and quick rollback are required.
+
+${\color{purple} \textbf{4. Canary Deployment}}$
+
+**What it does:** Gradually routes a small percentage of traffic to the new version before fully switching over.
+
+**How it works:** Deploys the new version to a small subset of users (canary pods).
+Monitors the performance and health of the canary pods.
+If successful, gradually increases the traffic to the new version until it replaces the old one completely.
+
+**When to use:** When you want to test the new version in a production environment with minimal risk.
+
+**Example:** Ideal for incremental updates and testing new features with a small user base.
+
+
+${\color{purple} \textbf{5. A/B Testing}}$
+
+**What it does:** Runs multiple versions of an application simultaneously and directs traffic to them based on specific criteria.
+
+**How it works:** Different versions (A and B) are deployed, and traffic is split between them based on user characteristics or other metrics.
+Used to compare performance, user engagement, or other metrics between the versions.
+
+**When to use:** When you need to evaluate different versions of an application against each other based on real user interactions.
+
+**Example:** Often used for user experience testing, feature flagging, and market experiments
