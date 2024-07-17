@@ -153,3 +153,67 @@ Used to compare performance, user engagement, or other metrics between the versi
 **When to use:** When you need to evaluate different versions of an application against each other based on real user interactions.
 
 **Example:** Often used for user experience testing, feature flagging, and market experiments
+
+
+### ${\color{red} \textbf{Deployments Type}}$
+
+${\color{green} \textbf{Stateless Applications}}$
+
+
+**Description:** Stateless applications do not store any data or state locally on the pod that cannot be lost. They handle requests independently, and any necessary data is typically stored in an external service like a database.
+
+**Use Cases:**
+- Web servers
+- API servers
+- Frontend applications
+
+**Deployment Controller:** Deployments or ReplicaSets are typically used for stateless applications.
+
+
+${\color{green} \textbf{Stateful Applications}}$
+
+**Description:** Stateful applications require persistent storage and maintain state information across pod restarts and rescheduling. Each instance of a stateful application (pod) usually has a unique identifier and stable network identity.
+
+**Use Cases:**
+
+- Databases (e.g., MySQL, Cassandra)
+- Distributed file systems
+- Stateful services requiring persistent data
+
+**Deployment Controller:** StatefulSets are used for deploying stateful applications.
+
+
+## ${\color{brown} \textbf{Key Differences}}$
+
+### 1. State Management:
+
+**Stateless:** No persistent state, each request is independent.
+
+**Stateful:** Maintains state across requests and pod restarts.
+
+### 2. Pod Identity:
+
+**Stateless:** Pods are interchangeable, no unique identifiers.
+
+**Stateful:** Each pod has a unique identity and stable network name.
+
+### 3. Storage:
+
+**Stateless:** Does not require persistent storage.
+
+**Stateful:** Requires persistent storage, typically using PersistentVolumes.
+
+### 4. Deployment Strategy:
+
+**Stateless:** Use Deployments or ReplicaSets.
+
+**Stateful:** Use StatefulSets.
+
+### 5. Scaling:
+
+**Stateless:** Easier to scale horizontally since there is no state dependency.
+
+**Stateful:** More complex to scale due to state and data consistency requirements.
+
+
+![image](https://github.com/user-attachments/assets/9400765c-5db3-4a4b-8e58-fd42f22517d9)
