@@ -88,3 +88,8 @@ A ReplicaSet in Kubernetes ensures that a specified number of pod replicas are r
 ![image](https://github.com/user-attachments/assets/656a1be5-d1b2-4674-9b64-d6577cbaf64d)
 
 
+###  ${\color{red} \textbf{Deployment : }}$
+
+In Kubernetes (k8s), a deployment is a way to manage and update applications running in your cluster. It defines the desired state for your app, such as how many copies of the app should be running, and Kubernetes ensures that the current state matches the desired state. If something goes wrong, Kubernetes can automatically restart or replace instances to keep your app running smoothly.
+
+Think of a deployment as a recipe that tells Kubernetes how to create and maintain your app.
