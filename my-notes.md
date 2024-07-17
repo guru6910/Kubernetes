@@ -93,15 +93,16 @@ A ReplicaSet in Kubernetes ensures that a specified number of pod replicas are r
 In Kubernetes (k8s), a deployment is a way to manage and update applications running in your cluster. It defines the desired state for your app, such as how many copies of the app should be running, and Kubernetes ensures that the current state matches the desired state. If something goes wrong, Kubernetes can automatically restart or replace instances to keep your app running smoothly.
 
 
-####  ${\color{green} \textbf{Strategy}}$
+###  ${\color{green} \textbf{Strategy}}$
 
 ${\color{purple} \textbf{1. Recreate Strategy}}$
 
-**What it does:**Stops all existing pods before starting new ones.
+**What it does:** Stops all existing pods before starting new ones.
 
-**How it works:**Kubernetes first shuts down all the existing pods running the old version of the application.
+**How it works:** Kubernetes first shuts down all the existing pods running the old version of the application.
 Once the old pods are terminated, it starts creating new pods with the updated version.
-When to use: When downtime is acceptable, and you need to ensure that no old version of the application is running during the update.
+
+**When to use:** When downtime is acceptable, and you need to ensure that no old version of the application is running during the update.
 
 **Example:** Used for non-critical applications or during maintenance windows.
 ${\color{purple} \textbf{2. Rolling Update Strategy}}$
