@@ -35,7 +35,7 @@ kubectl exec <pod_name>  -it -c <container_name> -- /bin/bash
 kubectl run nginx --image=nginx --restart=Never
 ````
 
-${\color{cyan} \textbf{Replication Controller}}$
+## ${\color{cyan} \textbf{Replication Controller}}$
 
 
 1. Create Replication controller
@@ -51,7 +51,7 @@ kubectl get rc
 kubectl delete rc <rc-name>
 ````
 
-${\color{cyan} \textbf{Replica Set}}$
+## ${\color{cyan} \textbf{Replica Set}}$
 
 1. Create Replica set
 ````
@@ -66,7 +66,7 @@ kubectl get rs
 kubectl delete rs <rs-name>
 ````
 
-${\color{cyan} \textbf{Deployment}}$
+## ${\color{cyan} \textbf{Deployment}}$
 
 1. Create Deployment wit command
 ````
