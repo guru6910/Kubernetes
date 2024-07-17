@@ -1,6 +1,6 @@
-## $${\color{violet} \textbf{Basic Commands of k8s}}$$
+# $${\color{violet} \textbf{Basic Commands of k8s}}$$
 
-${\color{cyan} \textbf{pod}}$
+## ${\color{cyan} \textbf{pod}}$
 
 1. Check the minikube install or not.
 ````
@@ -90,5 +90,29 @@ kubectl rollout history deployment <deployment_name>
 ````
 6. Update the image Version.
 ````
-kubectl set image deployment/<deployment_name> nginx=<new_version>
+kubectl set image deployment/<deployment_name> <container_name>=<new_version> --record
+````
+7. Get all info about which we created.
+````
+kubectl get all
+````
+8. Show the brief information about particular deployment.
+````
+kubectl get deployment <deployment_name> -o wide
+````
+9. To increase pod replicas in existing Deployment.
+````
+kubectl scale deployment <deployment_name> --replicas=<number>
+````
+10. show the revision version history of deployment.
+````
+kubectl rollout history deployment <deployment_name>
+````
+11. Rollback current version to recent version.
+````
+kubectl rollout undo deployment <deployment_name>
+````
+12. rollback to particular version using revision number.
+````
+kubectl rollout undo deployment <deployment_name> --to-revision=<number_of_revision>
 ````
