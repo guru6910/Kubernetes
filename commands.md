@@ -116,3 +116,7 @@ kubectl rollout undo deployment <deployment_name>
 ````
 kubectl rollout undo deployment <deployment_name> --to-revision=<number_of_revision>
 ````
+13. Confirmation to Rollout.
+````
+kubectl rollout status deployment <deployment_name>
+````
