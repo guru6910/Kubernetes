@@ -1,0 +1,25 @@
+````
+apiVersion: apps/v1
+kind:  StatefulSet
+metadata: 
+  name: statefull
+  labels:
+    app: depapp
+spec:
+    selector: 
+      matchLabels: 
+          app: depapp
+    replicas: 4
+    template:
+      metadata:
+        labels:
+          name: mdb
+          app: depapp
+      spec:
+        containers:
+          - name: mysql
+            image: mysql
+            ports:
+                - containerPort: 3306
+                  protocol: TCP
+````
