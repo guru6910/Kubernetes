@@ -237,3 +237,5 @@ ${\color{green} \textbf{Stateful Applications}}$
 **3. kube-public:** Used for resources that should be publicly accessible within the cluster.
 
 **4. kube-node-lease:** Holds lease objects associated with each node to determine node health.
+
+**5. local-path-storage:** Local path storage can be used as the default storage option.
