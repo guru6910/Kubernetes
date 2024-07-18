@@ -217,3 +217,23 @@ ${\color{green} \textbf{Stateful Applications}}$
 
 
 ![image](https://github.com/user-attachments/assets/9400765c-5db3-4a4b-8e58-fd42f22517d9)
+
+
+## ${\color{red} \textbf{Namespace}}$
+
+- A namespace is a way to divide cluster resources between multiple users.
+- It allows you to create multiple virtual clusters within the same physical cluster.
+- Namespaces provide a scope for names and help in organizing and managing resources.
+-  Namespaces provide a level of isolation for objects like pods, services, and deployments.
+-  When you create a resource without specifying a namespace, it gets created in the default namespace.
+
+
+### Default Namespace:
+
+**1. default:** This is the default namespace for objects without an explicit namespace. If you don’t specify a namespace when creating a resource, it goes into the default namespace.
+
+**2. kube-system:** Used for Kubernetes system components.
+
+**3. kube-public:** Used for resources that should be publicly accessible within the cluster.
+
+**4. kube-node-lease:** Holds lease objects associated with each node to determine node health.
