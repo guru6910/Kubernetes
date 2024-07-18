@@ -1,3 +1,4 @@
+${\color{red} \textbf{Statefull}}$
 ````
 apiVersion: apps/v1
 kind:  StatefulSet
