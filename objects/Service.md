@@ -1,3 +1,8 @@
+${\color{red} \textbf{Service}}$
+
+
+${\color{green} \textbf{Deployment & Service 1}}$
+
 ````
 apiVersion: apps/v1
 kind: Deployment
@@ -33,6 +38,8 @@ spec:
       port: 80
       targetPort: 80
 ````
+
+${\color{green} \textbf{Deployment & Service 2}}$
 ````
 apiVersion: apps/v1
 kind: Deployment
