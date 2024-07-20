@@ -25,6 +25,7 @@ kind: Service
 metadata:
   name: app1-service
 spec:
+  type: NodePort
   selector:
     app: app1
   ports:
