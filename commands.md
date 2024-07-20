@@ -158,3 +158,13 @@ kubectl config view --minify | grep namespace:
 ````
 kubectl exec -it <pod_name> -n <ns_name> -- <command which we want to run>
 ````
+## ${\color{cyan} \textbf{Service}}$
+
+1. Create Service.
+````
+kubectl expose deployment my-deployment --type=ClusterIP --name=my-service --port=80 --target-port=9376
+````
+2. Communicate between services from pod.
+````
+curl <opposite_service_ip>:<port_of_pod>
+````
