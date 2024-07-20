@@ -1,7 +1,7 @@
 ${\color{red} \textbf{Service}}$
 
 
-${\color{green} \textbf{Deployment & Service 1}}$
+${\color{green} \textbf{Deployment and Service 1}}$
 
 ````
 apiVersion: apps/v1
@@ -39,7 +39,7 @@ spec:
       targetPort: 80
 ````
 
-${\color{green} \textbf{Deployment & Service 2}}$
+${\color{green} \textbf{Deployment and Service 2}}$
 ````
 apiVersion: apps/v1
 kind: Deployment
