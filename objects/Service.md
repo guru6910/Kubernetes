@@ -44,19 +44,19 @@ ${\color{green} \textbf{Deployment and Service 2}}$
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: app1
+  name: app2
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: app1
+      app: app2
   template:
     metadata:
       labels:
-        app: app1
+        app: app2
     spec:
       containers:
-        - name: app1-container
+        - name: app2-container
           image: tomcat
           ports:
             - containerPort: 8080
@@ -65,10 +65,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: app1-service
+  name: app2-service
 spec:
   selector:
-    app: app1
+    app: app2
   ports:
     - protocol: TCP
       port: 8080
