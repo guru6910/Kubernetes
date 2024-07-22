@@ -1,7 +1,10 @@
-## ${\color{red} \textbf{Service}}$
+# ${\color{red} \textbf{Service}}$
 
 
 ${\color{green} \textbf{Deployment and Service 1}}$
+
+
+## ${\color{brown} \textbf{ClusterIP}}$
 
 ````
 apiVersion: apps/v1
@@ -73,4 +76,9 @@ spec:
       port: 8080
       targetPort: 8080
   type: ClusterIP
+````
+
+
+## ${\color{brown} \textbf{NodePort}}$
+
 ````
