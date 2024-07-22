@@ -30,7 +30,6 @@ kind: Service
 metadata:
   name: app1-service
 spec:
-  type: NodePort
   selector:
     app: app1
   ports:
@@ -73,4 +72,5 @@ spec:
     - protocol: TCP
       port: 8080
       targetPort: 8080
+  type: ClusterIP
 ````
