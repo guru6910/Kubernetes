@@ -1,10 +1,9 @@
 # ${\color{red} \textbf{Service}}$
 
+## ${\color{brown} \textbf{ClusterIP}}$
 
 ${\color{green} \textbf{Deployment and Service 1}}$
 
-
-## ${\color{brown} \textbf{ClusterIP}}$
 
 ````
 apiVersion: apps/v1
