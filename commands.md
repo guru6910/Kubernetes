@@ -6,7 +6,7 @@
 ````
 kubectl get node
 ````
-3. Create pod.
+2. Create pod.
 ````
 kubectl apply -f <file.yaml>
 ````
@@ -34,7 +34,10 @@ kubectl exec <pod_name>  -it -c <container_name> -- /bin/bash
 ````
 kubectl run nginx --image=nginx --restart=Never
 ````
-
+9. All delete which created with yaml file
+````
+kubectl delete -f <file.yml>
+````
 ## ${\color{cyan} \textbf{Replication Controller}}$
 
 
@@ -167,4 +170,8 @@ kubectl expose deployment my-deployment --type=ClusterIP --name=my-service --por
 2. Communicate between services from pod.
 ````
 curl <opposite_service_ip>:<port_of_pod>
+````
+3. List of service.
+````
+kubectl get svc
 ````
