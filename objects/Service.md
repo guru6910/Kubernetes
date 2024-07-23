@@ -155,7 +155,7 @@ spec:
       targetPort: 80
 ````
 
-## ${\color{brown} \textbf{External IP}}$
+## ${\color{brown} \textbf{External Name}}$
 ````
 apiVersion: apps/v1
 kind: Deployment
