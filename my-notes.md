@@ -243,3 +243,4 @@ ${\color{green} \textbf{Stateful Applications}}$
 
 ## ${\color{red} \textbf{Service}}$
 
+## ${\color{red} \textbf{DaemonSet}}$
