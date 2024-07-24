@@ -249,10 +249,10 @@ It's like having a reliable phone number that always reaches a customer support 
 
 ### Service Types:
 
-- ClusterIP: Exposes the service on a cluster-internal IP. This type makes the service only reachable from within the cluster.
-- NodePort: Exposes the service on each Node’s IP at a static port. A ClusterIP service, to which the NodePort service routes, is automatically created.
-- LoadBalancer: Exposes the service externally using a cloud provider’s load balancer. NodePort and ClusterIP services, to which the external load balancer routes, are automatically created.
-- ExternalName: Maps the service to the contents of the externalName field (e.g., example.com), returning a CNAME record with the name. No proxying of any kind is set up.
+- ${\color{green} \textbf{ClusterIP:}}$ Exposes the service on a cluster-internal IP. This type makes the service only reachable from within the cluster.
+- ${\color{green} \textbf{NodePort:}}$ Exposes the service on each Node’s IP at a static port. A ClusterIP service, to which the NodePort service routes, is automatically created.
+- #{\color{green} \textbf{LoadBalancer:}}$ Exposes the service externally using a cloud provider’s load balancer. NodePort and ClusterIP services, to which the external load balancer routes, are automatically created.
+- ${\color{green} \trxtbf{ExternalName:}}$ Maps the service to the contents of the externalName field (e.g., example.com), returning a CNAME record with the name. No proxying of any kind is set up.
 
 ## ${\color{red} \textbf{DaemonSet}}$
 
