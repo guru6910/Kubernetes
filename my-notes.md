@@ -243,6 +243,17 @@ ${\color{green} \textbf{Stateful Applications}}$
 
 ## ${\color{red} \textbf{Service}}$
 
+A Service is like a middleman that helps different parts of your application talk to each other. It gives a stable network address so other parts can find and use it, even if the actual parts (called Pods) that do the work change over time. 
+
+It's like having a reliable phone number that always reaches a customer support team, even if the people answering the phones change.
+
+### Service Types:
+
+- ClusterIP: Exposes the service on a cluster-internal IP. This type makes the service only reachable from within the cluster.
+- NodePort: Exposes the service on each Node’s IP at a static port. A ClusterIP service, to which the NodePort service routes, is automatically created.
+- LoadBalancer: Exposes the service externally using a cloud provider’s load balancer. NodePort and ClusterIP services, to which the external load balancer routes, are automatically created.
+- ExternalName: Maps the service to the contents of the externalName field (e.g., example.com), returning a CNAME record with the name. No proxying of any kind is set up.
+
 ## ${\color{red} \textbf{DaemonSet}}$
 
 ## ${\color{red} \textbf{Volume}}$
