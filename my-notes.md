@@ -255,7 +255,7 @@ It's like having a reliable phone number that always reaches a customer support 
   
 - ${\color{pink} \textbf{LoadBalancer:}}$ Exposes the service externally using a cloud provider’s load balancer. NodePort and ClusterIP services, to which the external load balancer routes, are automatically created.
 
-- ${\color{pink} \textbf{ExternalName:}}$ Maps the service to the contents of the externalName field (e.g., example.com), returning a CNAME record with the name. No proxying of any kind is set up.
+- ${\color{pink} \textbf{ExternalName:}}$  Maps the service to the contents of the externalName field (e.g., example.com), returning a CNAME record with the name. No proxying of any kind is set up.
 
 ## ${\color{red} \textbf{DaemonSet}}$
 
