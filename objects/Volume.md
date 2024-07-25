@@ -47,6 +47,7 @@ we mounted the /data folder when pod deleted and its newly created that time new
 1. kubectl apply -f hostpath.yml
 2. kubectl exec -it pod-1 --bash
 3. cd /data
+
 ![image](https://github.com/user-attachments/assets/9b2b2d41-1f17-46c6-8f1b-79bd40fed182)
 
 **open a copy of vm in new window**
@@ -54,9 +55,9 @@ we mounted the /data folder when pod deleted and its newly created that time new
 **Worker Node**
 4. minikube ssh 
 5. cd /tmp/data
+
 ![image](https://github.com/user-attachments/assets/d0a773a9-b13a-4edf-8e81-d0fa20b73b09)
 
 **Output :** 
 - which we add the files or any data in /data folder in pod that data automatically available in Worker node in the hostpath /tmp/data.
-- when the pod is terminated and newly created hence our old volume monted /data attached with newly created pod automatically.
-- 
+- when the pod is terminated and newly created hence our old volume monted /data attached with newly created pod automatically. 
