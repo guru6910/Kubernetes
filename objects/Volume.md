@@ -41,5 +41,6 @@ spec:
 
 In that case our volume is stored on worker node thats why when our node is terminated and newly created that time volume is attached with newly created pod.
 
-we mounted the /data folder when pod deleted and its newly created that time newly pod have old pod data which was have in /data folder.
+we mounted the /data folder when pod deleted and its newly created that time newly pod have old pod data which was have in /data folder not have any other directory old data which we created in that.
+
 
