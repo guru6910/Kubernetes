@@ -260,3 +260,41 @@ It's like having a reliable phone number that always reaches a customer support 
 ## ${\color{red} \textbf{DaemonSet}}$
 
 ## ${\color{red} \textbf{Volume}}$
+
+volume is a directory accessible to containers in a pod. Volumes solve issues related to data persistence and sharing among containers.
+
+Type of Volume.
+
+${\color{green} \textbf{EmptyDir :}}$ 
+- An empty directory created for a pod, accessible to all containers within that pod. It exists as long as the pod is running.
+ 
+${\color{green} \textbf{hostPath :}}$ 
+- Mounts a file or directory from the host node’s filesystem into your pod.
+
+${\color{green} \textbf{PersistentVolumeClaim :}}$ 
+- Claims storage resources defined by a PersistentVolume (PV). It's a way to request dynamically provisioned storage.
+- in thaat case volume is created with ebs in storage the it distributed in parts and it usage to pod using pvc.
+- when our deleted pod create in another node hence our previous data accisable for newly pod which create in different node.
+
+${\color{green} \textbf{Access Modes:}}$
+
+**1. ReadWriteOnce (RWO):**
+- The volume can be mounted as read-write by a single node.
+
+**2. ReadOnlyMany (ROX):**
+- The volume can be mounted as read-only by many nodes.
+
+**3. ReadWriteMany (RWX):**
+- The volume can be mounted as read-write by many nodes.
+
+${\color{green} \textbf{Persistent Volume Reclaim Policy}}$
+- This policy determines what happens to a PersistentVolume (PV) when its associated PersistentVolumeClaim (PVC) is deleted.
+
+**1. Retain:**
+- The PV is not deleted. it not reuse with another pv.
+
+**2. Delete:**
+- The PV and its data are deleted along with the PVC. This is useful for dynamic provisioning.
+
+**3. Recycle:**
+- The PV’s data is scrubbed (basic data wipe) and the PV is made available for a new claim. 
