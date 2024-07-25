@@ -61,3 +61,59 @@ we mounted the /data folder when pod deleted and its newly created that time new
 **Output :** 
 - which we add the files or any data in /data folder in pod that data automatically available in Worker node in the hostpath /tmp/data.
 - when the pod is terminated and newly created hence our old volume monted /data attached with newly created pod automatically. 
+
+
+${\color{green} \textbf{Persistent Volume and Persistent Volume Claim}}$
+
+````
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata: 
+  name: pvc
+spec: 
+ storageClassName: ""
+ accessModes: 
+ - ReadWriteOnce
+ resources:
+   requests:
+      storage: 10Gi
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata: 
+  name: pv
+spec: 
+ storageClassName: ""
+ accessModes: 
+ - ReadWriteOnce
+ capacity:
+      storage: 10Gi
+ hostPath: 
+   path: "/tmp/data"
+ persistentVolumeReclaimPolicy: Recycle
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: my-app
+  template:
+    metadata:
+      labels:
+        app: my-app
+    spec:
+      containers:
+      - name: my-container
+        image: nginx:latest
+        volumeMounts:
+        - mountPath: "/tmp/data"
+          name: vol-1
+      volumes:
+      - name: vol-1
+        persistentVolumeClaim:
+          claimName: pvc1
+````
