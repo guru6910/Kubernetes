@@ -267,13 +267,21 @@ Type of Volume.
 
 ${\color{green} \textbf{EmptyDir :}}$ 
 - An empty directory created for a pod, accessible to all containers within that pod. It exists as long as the pod is running.
+
 ![image](https://github.com/user-attachments/assets/80820051-4840-4302-bcaf-92ce2a6cea97)
 
 
 ${\color{green} \textbf{hostPath :}}$ 
 - Mounts a file or directory from the host node’s filesystem into your pod.
 
+![image](https://github.com/user-attachments/assets/50fd534a-ec7c-44d5-9618-b159f7112995)
+
+
 ${\color{green} \textbf{PersistentVolumeClaim :}}$ 
+
+![image](https://github.com/user-attachments/assets/47012cce-bc66-4059-820c-fc7283cffaca)
+
+
 - Claims storage resources defined by a PersistentVolume (PV). It's a way to request dynamically provisioned storage.
 - in thaat case volume is created with ebs in storage the it distributed in parts and it usage to pod using pvc.
 - when our deleted pod create in another node hence our previous data accisable for newly pod which create in different node.
