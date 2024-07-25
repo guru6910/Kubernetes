@@ -267,7 +267,9 @@ Type of Volume.
 
 ${\color{green} \textbf{EmptyDir :}}$ 
 - An empty directory created for a pod, accessible to all containers within that pod. It exists as long as the pod is running.
- 
+![image](https://github.com/user-attachments/assets/80820051-4840-4302-bcaf-92ce2a6cea97)
+
+
 ${\color{green} \textbf{hostPath :}}$ 
 - Mounts a file or directory from the host node’s filesystem into your pod.
 
