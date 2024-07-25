@@ -38,6 +38,10 @@ kubectl run nginx --image=nginx --restart=Never
 ````
 kubectl delete -f <file.yml>
 ````
+10. tp terminate the container in pod.
+````
+service stop nginx
+````
 ## ${\color{cyan} \textbf{Replication Controller}}$
 
 
