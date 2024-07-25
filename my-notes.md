@@ -259,6 +259,11 @@ It's like having a reliable phone number that always reaches a customer support 
 
 ## ${\color{red} \textbf{DaemonSet}}$
 
+A DaemonSet in Kubernetes is a way to automatically run a particular pod on all or specific nodes in a cluster. It's useful for tasks like monitoring or logging where you want the same service running across the entire cluster. If you create a DaemonSet, Kubernetes ensures that the pod is scheduled on every node, ensuring the task is consistently covered.
+
+![image](https://github.com/user-attachments/assets/31434f9e-1e11-4ac0-adb0-c428ee427785)
+
+
 ## ${\color{red} \textbf{Volume}}$
 
 volume is a directory accessible to containers in a pod. Volumes solve issues related to data persistence and sharing among containers.
