@@ -66,6 +66,7 @@ we mounted the /data folder when pod deleted and its newly created that time new
 ${\color{green} \textbf{Persistent Volume and Persistent Volume Claim}}$
 
 ````
+#pvc
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata: 
@@ -73,10 +74,11 @@ metadata:
 spec: 
  storageClassName: ""
  accessModes: 
- - ReadWriteOnce
+ - ReadWriteOnce  #you only need one pod to write to the volume at any time
  resources:
    requests:
       storage: 10Gi
+#pv
 ---
 apiVersion: v1
 kind: PersistentVolume
@@ -86,11 +88,13 @@ spec:
  storageClassName: ""
  accessModes: 
  - ReadWriteOnce
- capacity:
+ capacity:          #It Define the amount of storage
       storage: 10Gi
  hostPath: 
-   path: "/tmp/data"
- persistentVolumeReclaimPolicy: Recycle
+   path: "/tmp/data"  #path of host node
+ persistentVolumeReclaimPolicy: Recycle  #policy for pv recyle means we use that pv with another pvc also.
+
+#deployment with pvc
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -110,10 +114,10 @@ spec:
       - name: my-container
         image: nginx:latest
         volumeMounts:
-        - mountPath: "/tmp/data"
-          name: vol-1
+        - mountPath: "/tmp/data"  #mounted path for pod, which available in pod.
+          name: vol-1  #our volume name.
       volumes:
-      - name: vol-1
+      - name: vol-1  
         persistentVolumeClaim:
-          claimName: pvc1
+          claimName: pvc1   #our pvc name
 ````
