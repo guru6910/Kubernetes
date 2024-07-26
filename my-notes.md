@@ -250,10 +250,19 @@ It's like having a reliable phone number that always reaches a customer support 
 ### Service Types:
 
 - ${\color{pink} \textbf{ClusterIP:}}$ Exposes the service on a cluster-internal IP. This type makes the service only reachable from within the cluster.
-  
+
+![image](https://github.com/user-attachments/assets/05b4c84e-86ca-4961-8dd7-9f1bad4a3245)
+
+
 - ${\color{pink} \textbf{NodePort:}}$ Exposes the service on each Node’s IP at a static port. A ClusterIP service, to which the NodePort service routes, is automatically created.
+
+![image](https://github.com/user-attachments/assets/adaee991-dcf1-4988-b281-9e2245976285)
+
   
 - ${\color{pink} \textbf{LoadBalancer:}}$ Exposes the service externally using a cloud provider’s load balancer. NodePort and ClusterIP services, to which the external load balancer routes, are automatically created.
+
+![image](https://github.com/user-attachments/assets/ab121db2-6e2e-440a-bc79-2ec04c483219)
+
 
 - ${\color{pink} \textbf{ExternalName:}}$  Maps the service to the contents of the externalName field (e.g., example.com), returning a CNAME record with the name. No proxying of any kind is set up.
 
