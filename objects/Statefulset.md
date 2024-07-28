@@ -14,7 +14,7 @@ spec:
   hostPath:
     path: "/mnt/data"
 ````
-
+${\color{red} \textbf{Persistent Volume Claim}}$
 ````
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -28,7 +28,7 @@ spec:
       storage: 5Gi
   storageClassName: manual
 ````
-
+${\color{red} \textbf{Statefulset}}$
 ````
 apiVersion: apps/v1
 kind: StatefulSet
