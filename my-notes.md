@@ -322,3 +322,13 @@ ${\color{green} \textbf{Persistent Volume Reclaim Policy}}$
 
 **3. Recycle:**
 - The PV’s data is scrubbed (basic data wipe) and the PV is made available for a new claim. 
+
+
+## ${\color{red} \textbf{StatefulSet}}$
+- A StatefulSet is a Kubernetes controller that manages the deployment and scaling of a set of Pods and provides guarantees about the ordering and uniqueness of these Pods.
+- It is specifically designed to manage stateful applications, which require persistent storage and stable network identities.
+- StatefulSets provide stable, persistent storage for each Pod. This is typically achieved through PersistentVolumeClaims (PVCs) that are created for each Pod. The storage remains even if the Pod is deleted and recreated.
+- Pods in a StatefulSet are deployed in a specific order, one at a time, and are terminated in reverse order. This ensures that the system maintains a predictable state during scaling operations.
+- 
+
+![image](https://github.com/user-attachments/assets/d62aff60-458e-4805-a03a-0a79a1de00ed)
