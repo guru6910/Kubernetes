@@ -1,4 +1,4 @@
-${\color{red} \textbf{Statefull}}$
+${\color{red} \textbf{Statefulset}}$
 ````
 apiVersion: apps/v1
 kind:  StatefulSet
