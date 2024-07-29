@@ -1,71 +1,62 @@
 ${\color{red} \textbf{Persistent Volume}}$
-````
-apiVersion: v1
-kind: PersistentVolume
-metadata:
-  name: pv-mysql
-spec:
-  capacity:
-    storage: 5Gi
-  accessModes:
-    - ReadWriteOnce
-  persistentVolumeReclaimPolicy: Retain
-  storageClassName: manual
-  hostPath:
-    path: "/mnt/data"
-````
+
 ${\color{red} \textbf{Persistent Volume Claim}}$
-````
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: pvc-mysql
-spec:
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 5Gi
-  storageClassName: manual
-````
+
 ${\color{red} \textbf{Statefulset}}$
 ````
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  name: stateful-mysql
-  labels:
-    app: mysql
+  name: nginx-statefulset
 spec:
   selector:
     matchLabels:
-      app: mysql
-  serviceName: "mysql-service"
-  replicas: 4
+      app: nginx
+  serviceName: "nginx"
+  replicas: 2
   template:
     metadata:
       labels:
-        app: mysql
+        app: nginx
     spec:
       containers:
-        - name: mysql
-          image: mysql:5.7
-          ports:
-            - containerPort: 3306
-              protocol: TCP
-          env:
-            - name: MYSQL_ROOT_PASSWORD
-              value: "your_root_password"
-          volumeMounts:
-            - name: mysql-persistent-storage
-              mountPath: /var/lib/mysql
+      - name: nginx
+        image: nginx:latest
+        ports:
+        - containerPort: 80
+          name: web
+        volumeMounts:
+        - name: nginx-persistent-storage
+          mountPath: /usr/share/nginx/html
   volumeClaimTemplates:
-    - metadata:
-        name: mysql-persistent-storage
-      spec:
-        accessModes: [ "ReadWriteOnce" ]
-        resources:
-          requests:
-            storage: 5Gi
-        storageClassName: manual
+  - metadata:
+      name: nginx-persistent-storage
+    spec:
+      accessModes: ["ReadWriteOnce"]
+      resources:
+        requests:
+          storage: 1Gi
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-nginx
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/mnt/data"
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pvc-nginx
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
 ````
