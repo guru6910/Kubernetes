@@ -1,4 +1,4 @@
-## ${\color{red} \textbf{ConfigMap}}$
+### ${\color{red} \textbf{ConfigMap}}$
 
 ````
 apiVersion: v1
