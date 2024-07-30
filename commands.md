@@ -179,3 +179,11 @@ curl <opposite_service_ip>:<port_of_pod>
 ````
 kubectl get svc
 ````
+
+## ${\color{cyan} \textbf{Daemonset}}$
+
+## ${\color{cyan} \textbf{Statefulset}}$
+
+## ${\color{cyan} \textbf{ConfigMap}}$
+
+## ${\color{cyan} \textbf{Secret}}$
