@@ -2,7 +2,7 @@
 #### launch one instance t2.medium
 
 
-**1:Install eksctl CLI tool for creating EKS Clusters on AWS**
+### ${\color{red} \textbf{Install eksctl CLI tool for creating EKS Clusters on AWS}}$
 ##### download eksctl CLI tool for creating EKS Clusters on AWS
 ```` 
 curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
@@ -17,7 +17,7 @@ sudo mv /tmp/eksctl /usr/local/bin
 eksctl version
 ````
 
-**2:Install kubectl**
+## ${\color{red} \textbf{2:Install kubectl}}$
 Download the latest release with the command:
 ````
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
@@ -45,7 +45,7 @@ mv ./kubectl ~/.local/bin/kubectl
 kubectl version --client
 ````
 
-**3:Install AWS CLI on Ubuntu**
+## ${\color{red} \textbf{install AWS CLI on Ubuntu}}$
 ##### Download the aws cli bundle using below command
 ````
 sudo apt install unzip -y
@@ -55,21 +55,21 @@ sudo ./aws/install
 ````
 
 
-**4:Configure AWS CLI**
+## ${\color{red} \textbf{4:Configure AWS CLI}}$
 ##### To connect AWS using CLI we have configure AWS user using below command
 ````
 aws configure
 ````
 
-**5:Create Amazon EKS cluster using eksctl**
+**:Create Amazon EKS cluster using eksctl**
 ````
 eksctl create cluster --name demo-ekscluster --region us-east-1 --version 1.27 --nodegroup-name linux-nodes --node-type t2.micro --nodes 2
 ````
-**6: Log In Into EKS cluster**
+**: Log In Into EKS cluster**
 ````
 aws eks update-kubeconfig --name 34-ekscluster
 ````
-**7: Delete EKS Cluster**
+**: Delete EKS Cluster**
 ````
 eksctl delete cluster --name 34-ekscluster --region ap-south-1
 ````
