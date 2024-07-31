@@ -17,16 +17,12 @@ spec:
   containers:
   - name: my-container
     image: nginx
-    env:
-    - name: CONFIG_KEY1
-      valueFrom:
-        configMapKeyRef:
-          name: my-config
-          key: key1
-    - name: CONFIG_KEY2
-      valueFrom:
-        configMapKeyRef:
-          name: my-config
-          key: key2
+    volumeMounts:
+    - name: config-volume
+      mountPath: /etc/config
+  volumes:
+  - name: config-volume
+    configMap:
+      name: my-config
   restartPolicy: Never
 ````
