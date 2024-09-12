@@ -88,7 +88,7 @@ ${\color{red} \textbf{Set Based}}$
 
 ###  ${\color{red} \textbf{Replication Controller : }}$  
 
-Replication control in Kubernetes (K8s) ensures that a specified number of pod replicas are running at any given time. It automatically replaces any pods that fail, maintaining the desired state specified by the user.
+Replication controller in Kubernetes (K8s) ensures that a specified number of pod replicas are running at any given time. It automatically replaces any pods that fail, maintaining the desired state specified by the user.
 
 ###  ${\color{red} \textbf{Replica Set : }}$  
 
