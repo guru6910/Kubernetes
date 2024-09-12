@@ -349,3 +349,10 @@ ${\color{green} \textbf{Persistent Volume Reclaim Policy}}$
 - Secrets can be mounted as volumes in Pods, allowing applications to read sensitive data from the filesystem securely.
 - Store and manage sensitive passwords or API keys used by applications.
 - Manage encryption keys required for securing application data.
+
+## ${\color{red} \textbf{Ingress}}$
+- Controls how traffic from outside the cluster reaches services inside it.
+- Sends requests (like HTTP/HTTPS) to specific services based on rules (e.g., paths or domains).
+- Allows handling of secure HTTPS traffic with SSL/TLS certificates.
+- Distributes traffic across multiple service instances (pods).
+- Needs a special component (like NGINX) to make it work.
