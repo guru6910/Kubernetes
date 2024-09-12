@@ -5,13 +5,22 @@
 - it manages multy containers.
 - it is an open source orchastration engine for automating , deployment, scaling and management of containerized application.
 - K8s has two versions, the original Kubernetes and a mini version which is known as minikube.
+- Kubernetes is a tool that helps manage and run applications using containers (small, isolated environments).
+-  It makes sure your apps are running smoothly by doing things like:
+
+1. Automatically running your apps on different computers.
+2. Scaling up or down when more or fewer resources are needed.
+3. Distributing traffic between different parts of your app to balance the load.
+4. Restarting apps if they crash or replacing them if something goes wrong.
+5. Updating apps without downtime, and undoing changes if needed.
+6. Managing storage so your app's data is safe and accessible.
 
 ${\color{red} \textbf{Kubectl : }}$ give access for kubernetes commands.
 
 ## ${\color{green} \textbf{Architecture of k8s}}$
 
 ![image](https://github.com/user-attachments/assets/d0db8be9-56a4-4089-a881-0bb53458e07b)
-
+the master node controls and manages the cluster, while the worker nodes do the actual work of running your applications.
 
 ${\color{purple} \textbf{Master plan}}$
 
