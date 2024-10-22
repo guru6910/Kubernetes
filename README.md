@@ -258,12 +258,12 @@ It's like having a reliable phone number that always reaches a customer support 
 
 ### Service Types:
 
-- ${\color{pink} \textbf{ClusterIP:}}$ Exposes the service on a cluster-internal IP. This type makes the service only reachable from within the cluster.
+- ${\color{pink} \textbf{ClusterIP:}}$ Exposes the service on a cluster-internal IP. This type makes the service only reachable from within the cluster. we can host it with cluster ip of service.
 
 ![image](https://github.com/user-attachments/assets/05b4c84e-86ca-4961-8dd7-9f1bad4a3245)
 
 
-- ${\color{pink} \textbf{NodePort:}}$ Exposes the service on each Node’s IP at a static port. A ClusterIP service, to which the NodePort service routes, is automatically created.
+- ${\color{pink} \textbf{NodePort:}}$ Exposes the service on each Node’s IP at a static port. A ClusterIP service, to which the NodePort service routes, is automatically created. in that we use node ip for host within a cluster. ( minikube ip )
 
 ![image](https://github.com/user-attachments/assets/adaee991-dcf1-4988-b281-9e2245976285)
 
