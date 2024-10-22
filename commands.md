@@ -32,7 +32,7 @@ kubectl exec <pod_name>  -it -c <container_name> -- /bin/bash
 ````
 8. create a pod with command.
 ````
-kubectl run nginx --image=nginx --restart=Never
+kubectl run <pod_name> --image=nginx --restart=Never
 ````
 9. All delete which created with yaml file
 ````
