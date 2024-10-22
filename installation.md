@@ -6,7 +6,8 @@ https://www.linkedin.com/posts/abhipraydhoble_kubernetes-k8s-cloudcomputing-acti
 Kubernetes is an open-source platform used to automate the deployment, scaling, and management of containerized applications. It is like a traffic controller for containerized applications. It ensures that these applications are running efficiently and reliably, by managing their deployment, scaling, and updating processes. 
 
 Kubernetes Architecture:
-![kubernetes-cluster-architecture](https://github.com/abhipraydhoble/devops-B-34/assets/122669982/5eddf6eb-2bd3-4e57-9f3b-90e7567fca84)
+![image](https://github.com/user-attachments/assets/382aee26-7aa9-4ea1-899b-64bdfc74b0d5)
+
 
 
 A Kubernetes cluster consists of control plane nodes and worker nodes.
