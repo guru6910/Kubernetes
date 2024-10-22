@@ -200,6 +200,10 @@ kubectl get services -n <namespace>
 ````
 kubectl get endpoints <service-name>
 ````
+9. To stop container in pod.
+````
+service nginx stop
+````
 ## ${\color{cyan} \textbf{Daemonset}}$
 
 1. List Daemonset.
