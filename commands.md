@@ -1,5 +1,9 @@
 # $${\color{violet} \textbf{Basic Commands of k8s}}$$
 
+**To create the cluster from command**
+```
+eksctl create cluster --name my-cluster --region us-east-1 --nodegroup-name my-nodes
+```
 ## ${\color{cyan} \textbf{pod}}$
 
 1. Check the minikube install or not.
