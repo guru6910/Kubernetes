@@ -1,0 +1,13 @@
+what is k8s and why we use it. 
+architecture of k8s. 
+componants of k8s. 
+wha is pod 
+what is deployment 
+what is replica set
+what is replication controller
+replica set vs replication controller
+what is statefullset
+statefullset vs deployment
+what is configmap and secret 
+what is daemonset
+k8s services 
