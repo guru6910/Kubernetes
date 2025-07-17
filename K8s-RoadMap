@@ -19,5 +19,4 @@ command for restart the dwploymwnt.
 command for listing any resource from specific namespace. 
 command for deploy yml file. 
 what is ingress and what is ingress controller. 
-
-
+deployment strategy type 
