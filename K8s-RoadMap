@@ -1,13 +1,23 @@
 what is k8s and why we use it. 
 architecture of k8s. 
 componants of k8s. 
-wha is pod 
-what is deployment 
-what is replica set
-what is replication controller
-replica set vs replication controller
-what is statefullset
+pod 
+deployment 
+replica set
+replication controller
+replica set vs replication controller 
+statefullset
 statefullset vs deployment
 what is configmap and secret 
 what is daemonset
 k8s services 
+namespace 
+volume 
+read commands all from commands.md 
+write the deployment.yml file 
+command for restart the dwploymwnt.
+command for listing any resource from specific namespace. 
+command for deploy yml file. 
+what is ingress and what is ingress controller. 
+
+
